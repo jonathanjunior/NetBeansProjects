@@ -1,0 +1,232 @@
+AULA #02
+
+Bytecod
+
+Código Executável
+
+WORA - Write Once Run Anywhere
+JavaC - Compilador Java
+JVM - Java Virtual Machine
+
+JRE - Java Runtime Environment - Ambiente de execução Java
+    > JVM
+       >Loader/Verificador
+       >Interpretador/Gerenciador
+       >Compilador JIT - Just in Time
+    > Bibliotecas
+	
+JDK - Java Development Kit - Kit de desenvolvimento Java
+    > JRE
+    > JavaLang
+    > JavaTools
+       >JavaC
+       >Debugger
+       >APIs
+    > IDE - Integrated Development Environment / Ambiente de Desenvolvimento Integrado
+	
+______________________________________________________________________________________
+
+AULA #03
+
+IDE - NetBeans
+    > Editor completo
+	> Compilador/Linker/Debugger
+	> Gerador de código
+	> Ambiente de testes
+	> Distribuição simplificada
+	
+JDK
+    > SE - Standard Edition > Padrão com janelas
+	> EE - Enterprise Edition > Grandes empresas, com mais recursos
+	> ME - Micro Edition > Simples como apps mobile
+	
+_______________________________________________________________________________________
+
+AULA #04
+Classe > Método > Pacote
+
+
+package primeiroprograma;                       primeiroprograma //Pacote
+
+public class PrimeiroPrograma {                 PrimeiroPrograma //Classe 
+ 
+    public static void main(String[] args) {    main //Método
+        System.out.println("Olá, Mundo!");      System //Classe
+    }      
+}
+
+psvm + tab
+sout + tab
+
+Classe ou Interface -> Primeira letra maiuscula + Camel Case
+
+Atributo, Variável, Método - > Primeira letra minuscula + Camel Case
+	nomeAluno > Atributo
+	mediaPrimeiroBimestre > Variável
+	lancarNotaAluno > Método
+	
+Constante -> Todas as letras maiuscula
+	MINHA_CONSTANTE > Constante ex:Valor de PI
+	
+Pacote -> Todas as letras minuscula
+	meuprimeiroprojeto	
+_______________________________________________________________________________________
+
+AULA #05
+
+Swing - Janelas
+JavaFX - Janelas, navegadores, celulares, video-game, blue-ray, tv...
+
+Import
+JAVA.applet > Criar aplicativos
+JAVA.util > Utilitarios
+JAVA.math > Funções matemáticas
+JAVA.net > Redes
+JAVAx.sound > x=Extended, para som
+JAVAx.media > Media
+JAVAx.swing > Interface gráfica para ambientes de janela
+JAVAFX.fxml 
+
+Novo arquivo > Forms GUI Swing > Form JFrame
+
+Botão direito no botão > Eventos > Action > ActionPerformed
+
+Extends > Herança
+Private > Encapsulamento
+Implement > Interfaces
+
+Novo Projeto > JavaFX > Aplicação FXML do JavaFX (juntar xml, css, html)
+_______________________________________________________________________________________
+
+AULA #06
+
+// Comentário
+/* Comentário */
+/** Documentação 
+    @author
+	@version
+	@since */
+	
+#TIPOS PRIMITIVOS
+
+int idade = 3;                    Variável
+int idade = (int) = 3;            Variável   >> Typecast
+Integer idade = new Integer(3);   Objeto     >> Integer = Classe (Wrapper Class)  idade = objeto
+
+float sal = 1825.54f;
+float sal = (float) 1825.54;
+Float sal = new Float(1825.54);
+
+char letra = 'G';
+char letra = (char) 'G';
+Character letra = new Character('G');
+
+boolean casado = false;
+boolean casado = (boolean) false;
+Boolean casado = new Boolean(false);
+
+FAMÍLIA		TIPO PRIMITIVO	    WRAPPER CLASS		TAMANHO			EXEMPLO
+
+Lógico		boolean				Boolean				1 bit			true
+
+Literais    char				Character			1 byte			'A'
+			  -					String 				1 byte/cada 	"JAVA"
+
+Inteiros    byte				Byte 				1 byte			127 (max)
+			short      		    Short				2 bytes	        32 767 (max)
+			int					Integer				4 bytes			2 147 483(max)
+			long				Long				8 bytes			2^63 (max)
+ 
+ Reais		float				Float				4 bytes			3.4e+38 (max)
+			double				Double				8 bytes			1.8e+308 (max)
+
+#SAIDAS DE DADOS	
+		
+System.out.print("A nota é " + nota);
+
+System.out.println("A nota é " + nota);
+
+System.out.printf("A nota é %.2f \n", nota); 
+System.out.printf("A nota de %s é %.2f \n", nome, nota); 
+
+System.out.format("A nota de %s é %.2f \n", nome, nota);   
+
+#ENTRADA DE DADOS
+
+import java.util.Scanner;
+
+Scanner teclado = new Scanner(System.in);
+String nome = teclado.nextLine(); 
+float nota = teclado.nextFloat();
+
+#CONVERSÃO DOS TIPOS	
+	
+int idade = 30;
+String valor = Integer.toString(idade);
+System.out.println(valor);
+		
+String valor = "30";
+int idade = Integer.parseInt(valor);
+System.out.println(idade);
+
+String valor = "30.5";
+float idade = Float.parseFloat(valor);
+System.out.println(idade);
+System.out.printf("%.3f", idade);
+
+#MÉTODOS ACESSORES
+
+Getter
+lblResultado.getText();
+
+Setter
+lblResultado.setText();
+
+int n1 = Integer.parseInt(txtN1.getText());
+
+lblSoma.setText(Integer.toString(s));
+______________________________________________________________________________________
+
+AULA #07
+
+#Classe Math
+
+PI		Constante			Math.PI				3.1415
+pow		Exponenciação		Math.pow(5,2)		25
+sqrt	Raiz Quadrada		Math.sqrt(25)		5
+cbrt	Raiz Cúbica			Math.cbrt(27)		3
+
+#Arredondamentos
+abs			Valor Absoluto					Math.abs(-10)		10
+floor		Arredonda para Baixo			Math.floor(3.9)		3
+ceil		Arredonda para Cima				Math.ceil(4.2)		5
+round		Arredonda Aritmeticamente		Math.round(5.6)		6
+
+#Gerador de números
+
+Math.random()  >> 0.0 a 1.0
+
+5 + Math.random() * (10 - 5) >> De 5 a 10
+______________________________________________________________________________________
+
+AULA #08 Operadores Lógicos e Relacionais
+
+#Operador Ternário
+
+numero = n1 > n2 ? n1 : n2;
+
+#Operadores Relacionais
+>
+<
+>=
+<=
+==
+!=
+
+#Operadores Lógicos
+$$ 	 E			true & false	false
+||   OU			false || true	true
+^  	 XOU		true ^ true		false
+!  	 NAO		! false			true
+
+19:46
