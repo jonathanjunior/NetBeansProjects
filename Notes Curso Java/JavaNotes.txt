@@ -228,5 +228,19 @@ $$ 	 E			true & false	false
 ||   OU			false || true	true
 ^  	 XOU		true ^ true		false
 !  	 NAO		! false			true
+______________________________________________________________________________________
 
-19:46
+Curso de Java #09 - Estruturas Condicionais (Parte 1)
+
+#Estruturas de controle
+>Estruturas condicionais pt1
+ -Simples	
+ -Compostas
+
+______________________________________________________________________________________
+
+Curso de Java #10 - Estruturas Condicionais (Parte 2)
+#Estruturas de controle
+>Estruturas condicionais pt2
+ -Composta Encadeada
+ -Multipla Escolha
