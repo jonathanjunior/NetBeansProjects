@@ -317,5 +317,16 @@ Curso de Java #15 - Métodos
 //static, torna p método estatico, não precisa transforma-lo em objeto para poder utiliza-lo
 //void, o método não vai retornar valor
 //args, é um vetor de String
+______________________________________________________________________________________
+
+Curso POO Teoria #02a - O que é um Objeto?
+
+-Coisas que tenho > Atributos
+
+-Coisas que faço > Métodos
+
+-Como eu estou agora? > Estado
+
+Todo objeto vem de um molde/Classe
  
  
