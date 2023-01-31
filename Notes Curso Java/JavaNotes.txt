@@ -323,10 +323,19 @@ Curso POO Teoria #02a - O que é um Objeto?
 
 -Coisas que tenho > Atributos
 
--Coisas que faço > Métodos
+-Coisas que faço > Métodos()
 
 -Como eu estou agora? > Estado
 
-Todo objeto vem de um molde/Classe
+//Todo objeto vem de um molde/Classe
+
+//Instancioar > Criar um novo objeto a partir de uma classe
  
+ #CLASSE: Define os atributos e métodos comuns que serão compartilhados por um objeto
+ #OBJETO: É uma instancia de uma classe
  
+ #ABSTRAÇÃO: Considerar os atributos mais relevantes de um objeto
+______________________________________________________________________________________
+ 
+Curso POO Java #02b - Criando Classes e Objetos em Java
+
