@@ -28,41 +28,83 @@ public class StickPanel extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        AptWindow = new javax.swing.JPanel();
+        AptWindow1 = new javax.swing.JPanel();
         txtNamePac = new javax.swing.JTextField();
         txtNameDr = new javax.swing.JTextField();
         lblApt = new javax.swing.JLabel();
         lblNumApt = new javax.swing.JLabel();
         descWindow = new javax.swing.JScrollPane();
         txtDesc = new javax.swing.JTextArea();
-        AptWindow1 = new javax.swing.JPanel();
+        AptWindow2 = new javax.swing.JPanel();
         txtNamePac1 = new javax.swing.JTextField();
         txtNameDr1 = new javax.swing.JTextField();
         lblApt1 = new javax.swing.JLabel();
         lblNumApt1 = new javax.swing.JLabel();
         descWindow1 = new javax.swing.JScrollPane();
-        txtDesc1 = new javax.swing.JTextArea();
-        AptWindow2 = new javax.swing.JPanel();
+        campo2 = new javax.swing.JTextArea();
+        AptWindow3 = new javax.swing.JPanel();
         txtNamePac2 = new javax.swing.JTextField();
         txtNameDr2 = new javax.swing.JTextField();
         lblApt2 = new javax.swing.JLabel();
         lblNumApt2 = new javax.swing.JLabel();
         descWindow2 = new javax.swing.JScrollPane();
         txtDesc2 = new javax.swing.JTextArea();
+        AptWindow4 = new javax.swing.JPanel();
+        txtNamePac3 = new javax.swing.JTextField();
+        txtNameDr3 = new javax.swing.JTextField();
+        lblApt3 = new javax.swing.JLabel();
+        lblNumApt3 = new javax.swing.JLabel();
+        descWindow3 = new javax.swing.JScrollPane();
+        txtDesc3 = new javax.swing.JTextArea();
+        AptWindow5 = new javax.swing.JPanel();
+        txtNamePac4 = new javax.swing.JTextField();
+        txtNameDr4 = new javax.swing.JTextField();
+        lblApt4 = new javax.swing.JLabel();
+        lblNumApt4 = new javax.swing.JLabel();
+        descWindow4 = new javax.swing.JScrollPane();
+        txtDesc4 = new javax.swing.JTextArea();
+        AptWindow6 = new javax.swing.JPanel();
+        txtNamePac5 = new javax.swing.JTextField();
+        txtNameDr5 = new javax.swing.JTextField();
+        lblApt5 = new javax.swing.JLabel();
+        lblNumApt5 = new javax.swing.JLabel();
+        descWindow5 = new javax.swing.JScrollPane();
+        txtDesc5 = new javax.swing.JTextArea();
+        AptWindow7 = new javax.swing.JPanel();
+        txtNamePac6 = new javax.swing.JTextField();
+        txtNameDr6 = new javax.swing.JTextField();
+        lblApt6 = new javax.swing.JLabel();
+        lblNumApt6 = new javax.swing.JLabel();
+        descWindow6 = new javax.swing.JScrollPane();
+        txtDesc6 = new javax.swing.JTextArea();
+        AptWindow8 = new javax.swing.JPanel();
+        txtNamePac7 = new javax.swing.JTextField();
+        txtNameDr7 = new javax.swing.JTextField();
+        lblApt7 = new javax.swing.JLabel();
+        lblNumApt7 = new javax.swing.JLabel();
+        descWindow7 = new javax.swing.JScrollPane();
+        txtDesc7 = new javax.swing.JTextArea();
+        AptWindow9 = new javax.swing.JPanel();
+        txtNamePac8 = new javax.swing.JTextField();
+        txtNameDr8 = new javax.swing.JTextField();
+        lblApt8 = new javax.swing.JLabel();
+        lblNumApt8 = new javax.swing.JLabel();
+        descWindow8 = new javax.swing.JScrollPane();
+        txtDesc8 = new javax.swing.JTextArea();
+        btnSalvar = new javax.swing.JButton();
+        btnAtualizar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setAlwaysOnTop(true);
-        setMaximumSize(AptWindow.getMaximumSize());
-        setResizable(false);
+        setMaximumSize(AptWindow1.getMaximumSize());
 
-        AptWindow.setBackground(new java.awt.Color(196, 202, 198));
-        AptWindow.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        AptWindow1.setBackground(new java.awt.Color(196, 202, 198));
+        AptWindow1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         txtNamePac.setBackground(new java.awt.Color(57, 117, 117));
         txtNamePac.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         txtNamePac.setForeground(new java.awt.Color(255, 255, 255));
         txtNamePac.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txtNamePac.setText("VERONICA");
         txtNamePac.setAutoscrolls(false);
         txtNamePac.setBorder(null);
         txtNamePac.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
@@ -74,7 +116,6 @@ public class StickPanel extends javax.swing.JFrame {
 
         txtNameDr.setBackground(new java.awt.Color(174, 173, 171));
         txtNameDr.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txtNameDr.setText("DRº DENIS");
         txtNameDr.setBorder(null);
         txtNameDr.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -93,36 +134,35 @@ public class StickPanel extends javax.swing.JFrame {
 
         txtDesc.setColumns(20);
         txtDesc.setRows(5);
-        txtDesc.setText("ABDOMINOPLASTIA\n");
         descWindow.setViewportView(txtDesc);
 
-        javax.swing.GroupLayout AptWindowLayout = new javax.swing.GroupLayout(AptWindow);
-        AptWindow.setLayout(AptWindowLayout);
-        AptWindowLayout.setHorizontalGroup(
-            AptWindowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(AptWindowLayout.createSequentialGroup()
+        javax.swing.GroupLayout AptWindow1Layout = new javax.swing.GroupLayout(AptWindow1);
+        AptWindow1.setLayout(AptWindow1Layout);
+        AptWindow1Layout.setHorizontalGroup(
+            AptWindow1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AptWindow1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(AptWindowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(AptWindowLayout.createSequentialGroup()
-                        .addGroup(AptWindowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(AptWindow1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(AptWindow1Layout.createSequentialGroup()
+                        .addGroup(AptWindow1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(lblApt, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(lblNumApt, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
-                        .addGroup(AptWindowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(AptWindow1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(txtNameDr)
                             .addComponent(txtNamePac)))
-                    .addComponent(descWindow, javax.swing.GroupLayout.DEFAULT_SIZE, 401, Short.MAX_VALUE))
+                    .addComponent(descWindow, javax.swing.GroupLayout.DEFAULT_SIZE, 415, Short.MAX_VALUE))
                 .addContainerGap())
         );
-        AptWindowLayout.setVerticalGroup(
-            AptWindowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(AptWindowLayout.createSequentialGroup()
+        AptWindow1Layout.setVerticalGroup(
+            AptWindow1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AptWindow1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(AptWindowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(AptWindow1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(lblApt, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtNamePac, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(AptWindowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(AptWindow1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(lblNumApt)
                     .addComponent(txtNameDr, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -130,14 +170,13 @@ public class StickPanel extends javax.swing.JFrame {
                 .addGap(72, 72, 72))
         );
 
-        AptWindow1.setBackground(new java.awt.Color(196, 202, 198));
-        AptWindow1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        AptWindow2.setBackground(new java.awt.Color(196, 202, 198));
+        AptWindow2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         txtNamePac1.setBackground(new java.awt.Color(57, 117, 117));
         txtNamePac1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         txtNamePac1.setForeground(new java.awt.Color(255, 255, 255));
         txtNamePac1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txtNamePac1.setText("VERONICA");
         txtNamePac1.setAutoscrolls(false);
         txtNamePac1.setBorder(null);
         txtNamePac1.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
@@ -149,7 +188,6 @@ public class StickPanel extends javax.swing.JFrame {
 
         txtNameDr1.setBackground(new java.awt.Color(174, 173, 171));
         txtNameDr1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txtNameDr1.setText("DRº DENIS");
         txtNameDr1.setBorder(null);
         txtNameDr1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -164,40 +202,39 @@ public class StickPanel extends javax.swing.JFrame {
 
         lblNumApt1.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
         lblNumApt1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblNumApt1.setText("1");
+        lblNumApt1.setText("2");
 
-        txtDesc1.setColumns(20);
-        txtDesc1.setRows(5);
-        txtDesc1.setText("ABDOMINOPLASTIA\n");
-        descWindow1.setViewportView(txtDesc1);
+        campo2.setColumns(20);
+        campo2.setRows(5);
+        descWindow1.setViewportView(campo2);
 
-        javax.swing.GroupLayout AptWindow1Layout = new javax.swing.GroupLayout(AptWindow1);
-        AptWindow1.setLayout(AptWindow1Layout);
-        AptWindow1Layout.setHorizontalGroup(
-            AptWindow1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(AptWindow1Layout.createSequentialGroup()
+        javax.swing.GroupLayout AptWindow2Layout = new javax.swing.GroupLayout(AptWindow2);
+        AptWindow2.setLayout(AptWindow2Layout);
+        AptWindow2Layout.setHorizontalGroup(
+            AptWindow2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AptWindow2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(AptWindow1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(AptWindow1Layout.createSequentialGroup()
-                        .addGroup(AptWindow1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(AptWindow2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(AptWindow2Layout.createSequentialGroup()
+                        .addGroup(AptWindow2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(lblApt1, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(lblNumApt1, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
-                        .addGroup(AptWindow1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(AptWindow2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(txtNameDr1)
                             .addComponent(txtNamePac1)))
-                    .addComponent(descWindow1, javax.swing.GroupLayout.DEFAULT_SIZE, 389, Short.MAX_VALUE))
+                    .addComponent(descWindow1, javax.swing.GroupLayout.DEFAULT_SIZE, 382, Short.MAX_VALUE))
                 .addContainerGap())
         );
-        AptWindow1Layout.setVerticalGroup(
-            AptWindow1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(AptWindow1Layout.createSequentialGroup()
+        AptWindow2Layout.setVerticalGroup(
+            AptWindow2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AptWindow2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(AptWindow1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(AptWindow2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(lblApt1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtNamePac1, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(AptWindow1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(AptWindow2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(lblNumApt1)
                     .addComponent(txtNameDr1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -205,14 +242,13 @@ public class StickPanel extends javax.swing.JFrame {
                 .addGap(72, 72, 72))
         );
 
-        AptWindow2.setBackground(new java.awt.Color(196, 202, 198));
-        AptWindow2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        AptWindow3.setBackground(new java.awt.Color(196, 202, 198));
+        AptWindow3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         txtNamePac2.setBackground(new java.awt.Color(57, 117, 117));
         txtNamePac2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         txtNamePac2.setForeground(new java.awt.Color(255, 255, 255));
         txtNamePac2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txtNamePac2.setText("VERONICA");
         txtNamePac2.setAutoscrolls(false);
         txtNamePac2.setBorder(null);
         txtNamePac2.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
@@ -224,7 +260,6 @@ public class StickPanel extends javax.swing.JFrame {
 
         txtNameDr2.setBackground(new java.awt.Color(174, 173, 171));
         txtNameDr2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txtNameDr2.setText("DRº DENIS");
         txtNameDr2.setBorder(null);
         txtNameDr2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -239,40 +274,39 @@ public class StickPanel extends javax.swing.JFrame {
 
         lblNumApt2.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
         lblNumApt2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblNumApt2.setText("1");
+        lblNumApt2.setText("3");
 
         txtDesc2.setColumns(20);
         txtDesc2.setRows(5);
-        txtDesc2.setText("ABDOMINOPLASTIA\n");
         descWindow2.setViewportView(txtDesc2);
 
-        javax.swing.GroupLayout AptWindow2Layout = new javax.swing.GroupLayout(AptWindow2);
-        AptWindow2.setLayout(AptWindow2Layout);
-        AptWindow2Layout.setHorizontalGroup(
-            AptWindow2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(AptWindow2Layout.createSequentialGroup()
+        javax.swing.GroupLayout AptWindow3Layout = new javax.swing.GroupLayout(AptWindow3);
+        AptWindow3.setLayout(AptWindow3Layout);
+        AptWindow3Layout.setHorizontalGroup(
+            AptWindow3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AptWindow3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(AptWindow2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(AptWindow2Layout.createSequentialGroup()
-                        .addGroup(AptWindow2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(AptWindow3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(AptWindow3Layout.createSequentialGroup()
+                        .addGroup(AptWindow3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(lblApt2, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(lblNumApt2, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
-                        .addGroup(AptWindow2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(AptWindow3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(txtNameDr2)
                             .addComponent(txtNamePac2)))
-                    .addComponent(descWindow2, javax.swing.GroupLayout.DEFAULT_SIZE, 357, Short.MAX_VALUE))
+                    .addComponent(descWindow2, javax.swing.GroupLayout.DEFAULT_SIZE, 350, Short.MAX_VALUE))
                 .addContainerGap())
         );
-        AptWindow2Layout.setVerticalGroup(
-            AptWindow2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(AptWindow2Layout.createSequentialGroup()
+        AptWindow3Layout.setVerticalGroup(
+            AptWindow3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AptWindow3Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(AptWindow2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(AptWindow3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(lblApt2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtNamePac2, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(AptWindow2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(AptWindow3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(lblNumApt2)
                     .addComponent(txtNameDr2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -280,17 +314,469 @@ public class StickPanel extends javax.swing.JFrame {
                 .addGap(72, 72, 72))
         );
 
+        AptWindow4.setBackground(new java.awt.Color(196, 202, 198));
+        AptWindow4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        txtNamePac3.setBackground(new java.awt.Color(57, 117, 117));
+        txtNamePac3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        txtNamePac3.setForeground(new java.awt.Color(255, 255, 255));
+        txtNamePac3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtNamePac3.setAutoscrolls(false);
+        txtNamePac3.setBorder(null);
+        txtNamePac3.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        txtNamePac3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNamePac3ActionPerformed(evt);
+            }
+        });
+
+        txtNameDr3.setBackground(new java.awt.Color(174, 173, 171));
+        txtNameDr3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtNameDr3.setBorder(null);
+        txtNameDr3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNameDr3ActionPerformed(evt);
+            }
+        });
+
+        lblApt3.setBackground(new java.awt.Color(53, 119, 117));
+        lblApt3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        lblApt3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblApt3.setText("APTO.");
+
+        lblNumApt3.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        lblNumApt3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblNumApt3.setText("4");
+
+        txtDesc3.setColumns(20);
+        txtDesc3.setRows(5);
+        descWindow3.setViewportView(txtDesc3);
+
+        javax.swing.GroupLayout AptWindow4Layout = new javax.swing.GroupLayout(AptWindow4);
+        AptWindow4.setLayout(AptWindow4Layout);
+        AptWindow4Layout.setHorizontalGroup(
+            AptWindow4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AptWindow4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(AptWindow4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(AptWindow4Layout.createSequentialGroup()
+                        .addGroup(AptWindow4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(lblApt3, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblNumApt3, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(AptWindow4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtNameDr3)
+                            .addComponent(txtNamePac3)))
+                    .addComponent(descWindow3))
+                .addContainerGap())
+        );
+        AptWindow4Layout.setVerticalGroup(
+            AptWindow4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AptWindow4Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(AptWindow4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lblApt3, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtNamePac3, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(AptWindow4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lblNumApt3)
+                    .addComponent(txtNameDr3, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(descWindow3, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(72, 72, 72))
+        );
+
+        AptWindow5.setBackground(new java.awt.Color(196, 202, 198));
+        AptWindow5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        txtNamePac4.setBackground(new java.awt.Color(57, 117, 117));
+        txtNamePac4.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        txtNamePac4.setForeground(new java.awt.Color(255, 255, 255));
+        txtNamePac4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtNamePac4.setAutoscrolls(false);
+        txtNamePac4.setBorder(null);
+        txtNamePac4.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        txtNamePac4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNamePac4ActionPerformed(evt);
+            }
+        });
+
+        txtNameDr4.setBackground(new java.awt.Color(174, 173, 171));
+        txtNameDr4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtNameDr4.setBorder(null);
+        txtNameDr4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNameDr4ActionPerformed(evt);
+            }
+        });
+
+        lblApt4.setBackground(new java.awt.Color(53, 119, 117));
+        lblApt4.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        lblApt4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblApt4.setText("APTO.");
+
+        lblNumApt4.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        lblNumApt4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblNumApt4.setText("5");
+
+        txtDesc4.setColumns(20);
+        txtDesc4.setRows(5);
+        descWindow4.setViewportView(txtDesc4);
+
+        javax.swing.GroupLayout AptWindow5Layout = new javax.swing.GroupLayout(AptWindow5);
+        AptWindow5.setLayout(AptWindow5Layout);
+        AptWindow5Layout.setHorizontalGroup(
+            AptWindow5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AptWindow5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(AptWindow5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(AptWindow5Layout.createSequentialGroup()
+                        .addGroup(AptWindow5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(lblApt4, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblNumApt4, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(AptWindow5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtNameDr4)
+                            .addComponent(txtNamePac4)))
+                    .addComponent(descWindow4))
+                .addContainerGap())
+        );
+        AptWindow5Layout.setVerticalGroup(
+            AptWindow5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AptWindow5Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(AptWindow5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lblApt4, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtNamePac4, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(AptWindow5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lblNumApt4)
+                    .addComponent(txtNameDr4, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(descWindow4, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(72, 72, 72))
+        );
+
+        AptWindow6.setBackground(new java.awt.Color(196, 202, 198));
+        AptWindow6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        txtNamePac5.setBackground(new java.awt.Color(57, 117, 117));
+        txtNamePac5.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        txtNamePac5.setForeground(new java.awt.Color(255, 255, 255));
+        txtNamePac5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtNamePac5.setAutoscrolls(false);
+        txtNamePac5.setBorder(null);
+        txtNamePac5.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        txtNamePac5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNamePac5ActionPerformed(evt);
+            }
+        });
+
+        txtNameDr5.setBackground(new java.awt.Color(174, 173, 171));
+        txtNameDr5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtNameDr5.setBorder(null);
+        txtNameDr5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNameDr5ActionPerformed(evt);
+            }
+        });
+
+        lblApt5.setBackground(new java.awt.Color(53, 119, 117));
+        lblApt5.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        lblApt5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblApt5.setText("APTO.");
+
+        lblNumApt5.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        lblNumApt5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblNumApt5.setText("6");
+
+        txtDesc5.setColumns(20);
+        txtDesc5.setRows(5);
+        descWindow5.setViewportView(txtDesc5);
+
+        javax.swing.GroupLayout AptWindow6Layout = new javax.swing.GroupLayout(AptWindow6);
+        AptWindow6.setLayout(AptWindow6Layout);
+        AptWindow6Layout.setHorizontalGroup(
+            AptWindow6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AptWindow6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(AptWindow6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(AptWindow6Layout.createSequentialGroup()
+                        .addGroup(AptWindow6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(lblApt5, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblNumApt5, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(AptWindow6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtNameDr5)
+                            .addComponent(txtNamePac5)))
+                    .addComponent(descWindow5))
+                .addContainerGap())
+        );
+        AptWindow6Layout.setVerticalGroup(
+            AptWindow6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AptWindow6Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(AptWindow6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lblApt5, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtNamePac5, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(AptWindow6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lblNumApt5)
+                    .addComponent(txtNameDr5, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(descWindow5, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(72, 72, 72))
+        );
+
+        AptWindow7.setBackground(new java.awt.Color(196, 202, 198));
+        AptWindow7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        txtNamePac6.setBackground(new java.awt.Color(57, 117, 117));
+        txtNamePac6.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        txtNamePac6.setForeground(new java.awt.Color(255, 255, 255));
+        txtNamePac6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtNamePac6.setAutoscrolls(false);
+        txtNamePac6.setBorder(null);
+        txtNamePac6.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        txtNamePac6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNamePac6ActionPerformed(evt);
+            }
+        });
+
+        txtNameDr6.setBackground(new java.awt.Color(174, 173, 171));
+        txtNameDr6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtNameDr6.setBorder(null);
+        txtNameDr6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNameDr6ActionPerformed(evt);
+            }
+        });
+
+        lblApt6.setBackground(new java.awt.Color(53, 119, 117));
+        lblApt6.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        lblApt6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblApt6.setText("APTO.");
+
+        lblNumApt6.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        lblNumApt6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblNumApt6.setText("7");
+
+        txtDesc6.setColumns(20);
+        txtDesc6.setRows(5);
+        descWindow6.setViewportView(txtDesc6);
+
+        javax.swing.GroupLayout AptWindow7Layout = new javax.swing.GroupLayout(AptWindow7);
+        AptWindow7.setLayout(AptWindow7Layout);
+        AptWindow7Layout.setHorizontalGroup(
+            AptWindow7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AptWindow7Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(AptWindow7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(AptWindow7Layout.createSequentialGroup()
+                        .addGroup(AptWindow7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(lblApt6, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblNumApt6, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(AptWindow7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtNameDr6)
+                            .addComponent(txtNamePac6)))
+                    .addComponent(descWindow6))
+                .addContainerGap())
+        );
+        AptWindow7Layout.setVerticalGroup(
+            AptWindow7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AptWindow7Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(AptWindow7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lblApt6, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtNamePac6, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(AptWindow7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lblNumApt6)
+                    .addComponent(txtNameDr6, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(descWindow6, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(72, 72, 72))
+        );
+
+        AptWindow8.setBackground(new java.awt.Color(196, 202, 198));
+        AptWindow8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        txtNamePac7.setBackground(new java.awt.Color(57, 117, 117));
+        txtNamePac7.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        txtNamePac7.setForeground(new java.awt.Color(255, 255, 255));
+        txtNamePac7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtNamePac7.setAutoscrolls(false);
+        txtNamePac7.setBorder(null);
+        txtNamePac7.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        txtNamePac7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNamePac7ActionPerformed(evt);
+            }
+        });
+
+        txtNameDr7.setBackground(new java.awt.Color(174, 173, 171));
+        txtNameDr7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtNameDr7.setBorder(null);
+        txtNameDr7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNameDr7ActionPerformed(evt);
+            }
+        });
+
+        lblApt7.setBackground(new java.awt.Color(53, 119, 117));
+        lblApt7.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        lblApt7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblApt7.setText("APTO.");
+
+        lblNumApt7.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        lblNumApt7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblNumApt7.setText("8");
+
+        txtDesc7.setColumns(20);
+        txtDesc7.setRows(5);
+        descWindow7.setViewportView(txtDesc7);
+
+        javax.swing.GroupLayout AptWindow8Layout = new javax.swing.GroupLayout(AptWindow8);
+        AptWindow8.setLayout(AptWindow8Layout);
+        AptWindow8Layout.setHorizontalGroup(
+            AptWindow8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AptWindow8Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(AptWindow8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(AptWindow8Layout.createSequentialGroup()
+                        .addGroup(AptWindow8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(lblApt7, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblNumApt7, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(AptWindow8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtNameDr7)
+                            .addComponent(txtNamePac7)))
+                    .addComponent(descWindow7))
+                .addContainerGap())
+        );
+        AptWindow8Layout.setVerticalGroup(
+            AptWindow8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AptWindow8Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(AptWindow8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lblApt7, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtNamePac7, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(AptWindow8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lblNumApt7)
+                    .addComponent(txtNameDr7, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(descWindow7, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(72, 72, 72))
+        );
+
+        AptWindow9.setBackground(new java.awt.Color(196, 202, 198));
+        AptWindow9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        txtNamePac8.setBackground(new java.awt.Color(57, 117, 117));
+        txtNamePac8.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        txtNamePac8.setForeground(new java.awt.Color(255, 255, 255));
+        txtNamePac8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtNamePac8.setAutoscrolls(false);
+        txtNamePac8.setBorder(null);
+        txtNamePac8.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        txtNamePac8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNamePac8ActionPerformed(evt);
+            }
+        });
+
+        txtNameDr8.setBackground(new java.awt.Color(174, 173, 171));
+        txtNameDr8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtNameDr8.setBorder(null);
+        txtNameDr8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNameDr8ActionPerformed(evt);
+            }
+        });
+
+        lblApt8.setBackground(new java.awt.Color(53, 119, 117));
+        lblApt8.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        lblApt8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblApt8.setText("APTO.");
+
+        lblNumApt8.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        lblNumApt8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblNumApt8.setText("9");
+
+        txtDesc8.setColumns(20);
+        txtDesc8.setRows(5);
+        descWindow8.setViewportView(txtDesc8);
+
+        javax.swing.GroupLayout AptWindow9Layout = new javax.swing.GroupLayout(AptWindow9);
+        AptWindow9.setLayout(AptWindow9Layout);
+        AptWindow9Layout.setHorizontalGroup(
+            AptWindow9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AptWindow9Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(AptWindow9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(AptWindow9Layout.createSequentialGroup()
+                        .addGroup(AptWindow9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(lblApt8, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblNumApt8, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(AptWindow9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtNameDr8)
+                            .addComponent(txtNamePac8)))
+                    .addComponent(descWindow8))
+                .addContainerGap())
+        );
+        AptWindow9Layout.setVerticalGroup(
+            AptWindow9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AptWindow9Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(AptWindow9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lblApt8, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtNamePac8, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(AptWindow9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lblNumApt8)
+                    .addComponent(txtNameDr8, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(descWindow8, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(72, 72, 72))
+        );
+
+        btnSalvar.setText("Salvar");
+
+        btnAtualizar.setText("Atualizar");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(AptWindow, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(AptWindow1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(AptWindow2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(AptWindow7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(AptWindow4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(AptWindow1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(AptWindow2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(AptWindow5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(AptWindow8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(AptWindow3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(AptWindow6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(AptWindow9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnSalvar)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnAtualizar)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -299,13 +785,27 @@ public class StickPanel extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(AptWindow1, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(AptWindow2, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(AptWindow, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(AptWindow2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(684, Short.MAX_VALUE))
+                            .addComponent(AptWindow1, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(AptWindow3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(AptWindow4, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(AptWindow5, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(AptWindow6, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(AptWindow7, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(AptWindow8, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(AptWindow9, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnSalvar)
+                    .addComponent(btnAtualizar))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -334,6 +834,54 @@ public class StickPanel extends javax.swing.JFrame {
     private void txtNameDr2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNameDr2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtNameDr2ActionPerformed
+
+    private void txtNamePac3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNamePac3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNamePac3ActionPerformed
+
+    private void txtNameDr3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNameDr3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNameDr3ActionPerformed
+
+    private void txtNamePac4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNamePac4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNamePac4ActionPerformed
+
+    private void txtNameDr4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNameDr4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNameDr4ActionPerformed
+
+    private void txtNamePac5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNamePac5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNamePac5ActionPerformed
+
+    private void txtNameDr5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNameDr5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNameDr5ActionPerformed
+
+    private void txtNamePac6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNamePac6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNamePac6ActionPerformed
+
+    private void txtNameDr6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNameDr6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNameDr6ActionPerformed
+
+    private void txtNamePac7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNamePac7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNamePac7ActionPerformed
+
+    private void txtNameDr7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNameDr7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNameDr7ActionPerformed
+
+    private void txtNamePac8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNamePac8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNamePac8ActionPerformed
+
+    private void txtNameDr8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNameDr8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNameDr8ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -371,26 +919,70 @@ public class StickPanel extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel AptWindow;
     private javax.swing.JPanel AptWindow1;
     private javax.swing.JPanel AptWindow2;
+    private javax.swing.JPanel AptWindow3;
+    private javax.swing.JPanel AptWindow4;
+    private javax.swing.JPanel AptWindow5;
+    private javax.swing.JPanel AptWindow6;
+    private javax.swing.JPanel AptWindow7;
+    private javax.swing.JPanel AptWindow8;
+    private javax.swing.JPanel AptWindow9;
+    private javax.swing.JButton btnAtualizar;
+    private javax.swing.JButton btnSalvar;
+    private javax.swing.JTextArea campo2;
     private javax.swing.JScrollPane descWindow;
     private javax.swing.JScrollPane descWindow1;
     private javax.swing.JScrollPane descWindow2;
+    private javax.swing.JScrollPane descWindow3;
+    private javax.swing.JScrollPane descWindow4;
+    private javax.swing.JScrollPane descWindow5;
+    private javax.swing.JScrollPane descWindow6;
+    private javax.swing.JScrollPane descWindow7;
+    private javax.swing.JScrollPane descWindow8;
     private javax.swing.JLabel lblApt;
     private javax.swing.JLabel lblApt1;
     private javax.swing.JLabel lblApt2;
+    private javax.swing.JLabel lblApt3;
+    private javax.swing.JLabel lblApt4;
+    private javax.swing.JLabel lblApt5;
+    private javax.swing.JLabel lblApt6;
+    private javax.swing.JLabel lblApt7;
+    private javax.swing.JLabel lblApt8;
     private javax.swing.JLabel lblNumApt;
     private javax.swing.JLabel lblNumApt1;
     private javax.swing.JLabel lblNumApt2;
+    private javax.swing.JLabel lblNumApt3;
+    private javax.swing.JLabel lblNumApt4;
+    private javax.swing.JLabel lblNumApt5;
+    private javax.swing.JLabel lblNumApt6;
+    private javax.swing.JLabel lblNumApt7;
+    private javax.swing.JLabel lblNumApt8;
     private javax.swing.JTextArea txtDesc;
-    private javax.swing.JTextArea txtDesc1;
     private javax.swing.JTextArea txtDesc2;
+    private javax.swing.JTextArea txtDesc3;
+    private javax.swing.JTextArea txtDesc4;
+    private javax.swing.JTextArea txtDesc5;
+    private javax.swing.JTextArea txtDesc6;
+    private javax.swing.JTextArea txtDesc7;
+    private javax.swing.JTextArea txtDesc8;
     private javax.swing.JTextField txtNameDr;
     private javax.swing.JTextField txtNameDr1;
     private javax.swing.JTextField txtNameDr2;
+    private javax.swing.JTextField txtNameDr3;
+    private javax.swing.JTextField txtNameDr4;
+    private javax.swing.JTextField txtNameDr5;
+    private javax.swing.JTextField txtNameDr6;
+    private javax.swing.JTextField txtNameDr7;
+    private javax.swing.JTextField txtNameDr8;
     private javax.swing.JTextField txtNamePac;
     private javax.swing.JTextField txtNamePac1;
     private javax.swing.JTextField txtNamePac2;
+    private javax.swing.JTextField txtNamePac3;
+    private javax.swing.JTextField txtNamePac4;
+    private javax.swing.JTextField txtNamePac5;
+    private javax.swing.JTextField txtNamePac6;
+    private javax.swing.JTextField txtNamePac7;
+    private javax.swing.JTextField txtNamePac8;
     // End of variables declaration//GEN-END:variables
 }
