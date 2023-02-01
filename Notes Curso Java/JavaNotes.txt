@@ -228,5 +228,105 @@ $$ 	 E			true & false	false
 ||   OU			false || true	true
 ^  	 XOU		true ^ true		false
 !  	 NAO		! false			true
+______________________________________________________________________________________
 
-19:46
+Curso de Java #09 - Estruturas Condicionais (Parte 1)
+#ESTRUTURAS DE CONTROLE
+
+>Estruturas condicionais pt1
+ -Simples	
+ -Compostas
+______________________________________________________________________________________
+
+Curso de Java #10 - Estruturas Condicionais (Parte 2)
+#ESTRUTURAS DE CONTROLE
+
+>Estruturas condicionais pt2
+ -Composta Encadeada
+ -Multipla Escolha > Switch;
+ ______________________________________________________________________________________
+ 
+Curso de Java #11 - Estruturas de Repetição (Parte 1)
+#ESTRUTURAS DE CONTROLE
+>Estruturas de Repetição pt1
+ -While      << Repetição com teste no inicio
+  >Continue;
+  >Break;
+ ______________________________________________________________________________________
+ 
+ Curso de Java #12 - Estruturas de Repetição (Parte 2)
+ #ESTRUTURAS DE CONTROLE
+ >Estruturas de Repetição pt2
+ -Do While   << Repetição com teste no final
+______________________________________________________________________________________
+
+Curso de Java #13 - Estruturas de Repetição (Parte 3)
+#ESTRUTURAS DE CONTROLE
+  >Estruturas de Repetição pt3
+   -For      << Repetição com variável de controle
+______________________________________________________________________________________
+
+Curso de Java #14 - #VARIAVEIS COMPOSTAS (VETORES E MATRIZES)
+  -VETORES
+  
+   int n[] = new int[4];
+   
+    int n[] = {3,2,8,7,5,4};  
+	System.out.println("Tamanho: " + n.length);   
+    for(int c=0; c<=5; c++){
+            System.out.print(n[c]);
+    }
+	//run:
+	Tamanho: 6
+	328754
+	
+	for(int c=0; c<n.length; c++){
+            System.out.print(n[c]);
+        }
+	//run:
+	328754
+	
+#FOR EACH ONE
+double v[] = {3.5, 2.75, 9, -4.5};
+        for (double valor: v) {
+            System.out.print(valor + " ");
+        }		
+		//run:
+		3.5 2.75 9.0 -4.5
+		
+		Arrays.sort(v); //Ordenar os valores em ordem crescente
+		int p = Arrays.binarySearch(vet, 1); // Buscar o indicio do valor 1
+		Arrays.fill(v, 0); //Preencher o vetor todo com 0
+______________________________________________________________________________________
+
+Curso de Java #15 - Métodos
+#ROTINAS
+//Procedimentos (void), não retornam valor
+		static void soma(int a, int b) {
+        int s = a + b;
+        System.out.println("A soma é " + s);
+		}
+	
+//Funcões, rotinas que retornam valor
+		static int soma(int a, int b) {
+        int s = a + b;
+        return s;
+		}
+		
+//public, torna o método público, qualquer um pode acessar o método de fora
+//static, torna p método estatico, não precisa transforma-lo em objeto para poder utiliza-lo
+//void, o método não vai retornar valor
+//args, é um vetor de String
+______________________________________________________________________________________
+
+Curso POO Teoria #02a - O que é um Objeto?
+
+-Coisas que tenho > Atributos
+
+-Coisas que faço > Métodos
+
+-Como eu estou agora? > Estado
+
+Todo objeto vem de um molde/Classe
+ 
+ 
