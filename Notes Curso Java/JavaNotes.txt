@@ -329,7 +329,7 @@ Curso POO Teoria #02a - O que é um Objeto?
 
 //Todo objeto vem de um molde/Classe
 
-//Instancioar > Criar um novo objeto a partir de uma classe
+//Instanciar > Criar um novo objeto a partir de uma classe
  
  #CLASSE: Define os atributos e métodos comuns que serão compartilhados por um objeto
  #OBJETO: É uma instancia de uma classe
@@ -338,4 +338,30 @@ Curso POO Teoria #02a - O que é um Objeto?
 ______________________________________________________________________________________
  
 Curso POO Java #02b - Criando Classes e Objetos em Java
+______________________________________________________________________________________
 
+Curso POO Teoria #03a - O que é Visibilidade em um Objeto?
+
+Linguagem de Modelagem Unificada - UML
+	>Diagrama de Classes
+	
+Modificadores de Visibilidade
+	-Indicam o nível de acesso aos componentes internos (atributos e métodos) de uma classe.
+		+ público - a classe atual e todas as outras classes.
+		- privado - somente a classe atual.
+		# protegido - a classe atual e todas as suas sub-classes
+______________________________________________________________________________________
+
+Curso POO Java #03b - Configurando Visibilidade de Atributos e Métodos
+______________________________________________________________________________________
+
+Curso POO Teoria #04a - Métodos Especiais
+Métodos Acessores - Getters
+Métodos Modificadores - Setters
+Método Construtor - Construct
+
+Método: Evolução de procedimento & função
+______________________________________________________________________________________
+
+Curso POO Java #04b - Métodos Getter, Setter e Construtor
+1:26
