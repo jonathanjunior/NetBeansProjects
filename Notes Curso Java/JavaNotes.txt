@@ -295,7 +295,7 @@ double v[] = {3.5, 2.75, 9, -4.5};
 		3.5 2.75 9.0 -4.5
 		
 		Arrays.sort(v); //Ordenar os valores em ordem crescente
-		int p = Arrays.binarySearch(vet, 1); // Buscar o indicio do valor 1
+		int p = Arrays.binarySearch(vet, 1); // Buscar o indice do valor 1
 		Arrays.fill(v, 0); //Preencher o vetor todo com 0
 ______________________________________________________________________________________
 
@@ -312,7 +312,7 @@ Curso de Java #15 - Métodos
         int s = a + b;
         return s;
 		}
-		
+
 //public, torna o método público, qualquer um pode acessar o método de fora
 //static, torna p método estatico, não precisa transforma-lo em objeto para poder utiliza-lo
 //void, o método não vai retornar valor
