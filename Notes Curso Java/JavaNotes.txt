@@ -356,12 +356,31 @@ Curso POO Java #03b - Configurando Visibilidade de Atributos e Métodos
 ______________________________________________________________________________________
 
 Curso POO Teoria #04a - Métodos Especiais
-Métodos Acessores - Getters
-Métodos Modificadores - Setters
+Métodos Acessores - Getters > Tem retorno / Sem parametros
+Métodos Modificadores - Setters > Sem retorno / Possui parametros
 Método Construtor - Construct
 
 Método: Evolução de procedimento & função
 ______________________________________________________________________________________
 
 Curso POO Java #04b - Métodos Getter, Setter e Construtor
-1:26
+
+public Caneta() { //Este é o método construtor, deve ter o mesmo nome da classe
+        this.tampar();
+        this.cor = "Azul";
+    }
+	
+public Caneta(String m, String c, float p) { //Este é o método construtor mais completo
+       this.modelo = m;
+       this.cor = c;
+       this.ponta = p;
+       this.tampar();
+       
+    }
+	
+Alt + Ins   > Atalho para criar getters, setters e construct
+
+Normalmente todo método setter e getter são publicos
+______________________________________________________________________________________
+
+Curso POO Teoria #05a - Exemplo Prático com Objetos
