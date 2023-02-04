@@ -384,3 +384,6 @@ Normalmente todo método setter e getter são publicos
 ______________________________________________________________________________________
 
 Curso POO Teoria #05a - Exemplo Prático com Objetos
+______________________________________________________________________________________
+
+Curso POO Java #05b - Exemplo Prático em Java
