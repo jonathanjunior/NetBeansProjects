@@ -387,3 +387,39 @@ Curso POO Teoria #05a - Exemplo Prático com Objetos
 ______________________________________________________________________________________
 
 Curso POO Java #05b - Exemplo Prático em Java
+______________________________________________________________________________________
+
+Curso POO Teoria #06a - Pilares da POO: Encapsulamento
+
+#POO
+
+E - Encapsulamento
+		> Interface - Lista de serviços fornecidos por um componente. É o contato com o mundo exterior, que define
+					o que pode ser feito com um objeto dessa classe.
+			
+		> Ocultar parte independentes da implementação, permitindo construir partes invisíveis ao mundo exterior.
+		
+		> Encapsular não é obrigatorio, mas é uma boa prática para produzir Classes mais eficientes.
+		
+		> Vantagens em encapsular
+			- Tornar mudanças invisíveis
+			- Facilitar reutilização do código
+			- Reduzir efeitos colaterais
+			
+		> Interfaces somente possuem métodos, e todos são públicos
+		
+		> Toda Classe encapsulada possui atributos privados (-)
+	
+H - Herança
+P - Polimorfismo
+______________________________________________________________________________________
+
+Curso POO Java #06b - Encapsulamento
+
+CTRL + E //apagar linha atual
+______________________________________________________________________________________
+
+Curso POO Teoria #07a - Relacionamento entre Classes
+______________________________________________________________________________________
+
+Curso POO Java #07b - Objetos Compostos em Java
