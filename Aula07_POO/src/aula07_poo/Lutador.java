@@ -20,6 +20,7 @@ public class Lutador {
         System.out.println(this.getVitorias() + ((this.getVitorias() == 1)? " Vitoria" : " Vitorias"));
         System.out.println(this.getDerrotas() + ((this.getDerrotas() == 1)? " Derrota" : " Derrotas"));
         System.out.println(this.getEmpates() + ((this.getEmpates() == 1)? " Empate" : " Empates"));
+        System.out.println("----------------------------");
     }
     
     public void status(){
