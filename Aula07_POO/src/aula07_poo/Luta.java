@@ -16,7 +16,7 @@ public class Luta {
             this.aprovada = true;
             this.desafiado = l1;
             this.desafiante = l2;
-            System.out.println(this.desafiado.getNome() + " VS " + this.desafiante.getNome());
+            //System.out.println(this.desafiado.getNome() + " VS " + this.desafiante.getNome());
         } else{
             this.aprovada = false;
             this.desafiado = null;
