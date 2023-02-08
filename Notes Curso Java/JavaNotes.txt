@@ -423,3 +423,11 @@ Curso POO Teoria #07a - Relacionamento entre Classes
 ______________________________________________________________________________________
 
 Curso POO Java #07b - Objetos Compostos em Java
+______________________________________________________________________________________
+
+Curso POO teoria #08a - Relacionamento de Agregação
+______________________________________________________________________________________
+
+Curso POO Java #08b - Agregação entre Objetos com Java
+
+_
