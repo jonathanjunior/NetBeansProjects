@@ -26,9 +26,14 @@ public class Aula07_POO {
         l[5].status();
         */
         
+        
         Luta UEC01 = new Luta();
         UEC01.marcarLuta(l[4], l[5]);
-        UEC01.lutar();
+        //UEC01.lutar();
+        System.out.println(UEC01.isAprovada());
+        
+        
+        
         
     }    
 }

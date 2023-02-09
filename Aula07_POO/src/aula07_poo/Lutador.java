@@ -7,7 +7,7 @@ public class Lutador {
     private float altura;
     private float peso;
     private String categoria;
-    private int vitorias, derrotas, empates;
+    private int vitorias, derrotas, empates;    
     
     //Métodos Públicos
     public void apresentar(){
