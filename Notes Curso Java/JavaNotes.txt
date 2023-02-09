@@ -438,3 +438,11 @@ Curso POO Java #09b - Exercício prático POO em Java
 ______________________________________________________________________________________
 
 Curso POO Teoria #10a - Herança (Parte 1)
+
+#HERANÇA - Permite basear uma nova classe na definição de uma outra classe previamente existente.
+		 - A herança será aplicada tanto para as características quanto para os comportamentos.
+		 
+		 > Extends
+		 
+		 Classe Mãe, Progenitora, Superclasse
+		 Classe Filha, Subclasse
