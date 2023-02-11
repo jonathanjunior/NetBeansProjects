@@ -446,3 +446,50 @@ Curso POO Teoria #10a - Herança (Parte 1)
 		 
 		 Classe Mãe, Progenitora, Superclasse
 		 Classe Filha, Subclasse
+______________________________________________________________________________________
+
+Curso POO Java #10b - Herança (Parte 1)
+______________________________________________________________________________________
+
+Curso POO Teoria #11a - Herança (Parte 2)
+
+	-Classe que não tem superclasse (mãe) > RAIZ
+	-Classe que não tem subclasse (filhas) > FOLHA
+	
+	-Descendente > Todas as subclasses abaixo da filha são descendentes da classe RAIZ
+	-Ancestral   > Todas as subclasses abaixo da classe filha são ancestral da classe RAIZ
+	
+	-Especialização > Percorre a arvore de cima para baixo
+	-Generalização > Percorre a avore de baixo para cima
+	
+	#TIPOS DE HERANÇA - SÃO VARIOS, VAMOS CONSIDERAR DOIS DELES:
+		> Herança de Implementação
+		> Herança de Diferença
+		
+	- Classe Abstrata - Não pode ser instanciada. Só pode servir como progenitora.	
+	- Método Abstrato - Declarado, mas não implementado na progenitora. Só pode ser colocado em Interfaces ou Classe Abstrata.
+	- Classe Final - Não pode ser herdada por outra classe. Obrigatóriamente folha.
+	- Método Final - Não pode ser sobrescrito pelas suas sub-classes. Obrigatoriamente herdado.
+______________________________________________________________________________________
+	
+Curso POO Java #11b - Herança (Parte 2)
+	 @Override
+	 
+	 final > Usar em métodos quando quiser que estes não sejam subtituidos.
+			 Usar em classes quando quiser que estas não tenham subclasses.
+______________________________________________________________________________________
+
+Curso POO Teoria #12a - Conceito Polimorfismo (Parte 1)
+	
+	POLIMORFISMO - Permite que um mesmo nome represente vários comportamentos diferentes.
+		Poli = muitas
+		Morfo = formas
+		
+	ASSINATURA DO MÉTODO
+		-Quantidade e os tipos dos parâmetros, o tipo de retorno não entra no conceito de assinatura
+		
+	TIPOS DE POLIMORFISMO, são varios, vamos trabalhar com dois principais neste curso.
+		- Sobreposição > Acontece quando substituimos um método de uma superclasse na sua subclasse, usando a mesma assinatura.
+			Override
+			
+		- Sobrecarga
