@@ -488,7 +488,7 @@ Curso POO Teoria #12a - Conceito Polimorfismo (Parte 1)
 	ASSINATURA DO MÉTODO
 		-Quantidade e os tipos dos parâmetros, o tipo de retorno não entra no conceito de assinatura
 		
-	TIPOS DE POLIMORFISMO, são varios, vamos trabalhar com dois principais neste curso.
+	TIPOS DE POLIMORFISMO, Inclusão, paramétrico, sobrecarga e sobreposição, vamos trabalhar com dois principais neste curso.
 		- Sobreposição > Acontece quando substituimos um método de uma superclasse na sua subclasse, usando a mesma assinatura.
 			Override
 			
@@ -506,3 +506,16 @@ Curso POO Teoria #13a - Conceito Polimorfismo (Parte 2)
 ______________________________________________________________________________________
 
 Curso POO Java #13b - Polimorfismo Sobrecarga (Parte 2)
+______________________________________________________________________________________
+
+Curso POO conceito #14a - Exercícios de POO (Parte 2)
+______________________________________________________________________________________
+
+Curso POO Java #14b - Projeto Final em Java (Parte 1)
+ - Metodos de interfaces e classes abstratas não tem implementação. 
+ ______________________________________________________________________________________
+ 
+ Curso POO conceito #15a - Exercícios de POO (Parte 3)
+ ______________________________________________________________________________________
+ 
+ Curso POO Java #15b - Projeto Final em Java (Parte 2)
