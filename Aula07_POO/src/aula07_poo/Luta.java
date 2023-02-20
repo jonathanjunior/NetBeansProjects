@@ -12,11 +12,11 @@ public class Luta {
     //Métodos públicos
     public void marcarLuta(Lutador l1, Lutador l2){
         if(l1.getCategoria().equals(l2.getCategoria())
-            && l1 != l2){
+            && l1 != l2 && l1.getSexo().equals(l2.getSexo())){
             this.aprovada = true;
             this.desafiado = l1;
             this.desafiante = l2;
-            //System.out.println(this.desafiado.getNome() + " VS " + this.desafiante.getNome());
+            System.out.println(this.desafiado.getNome() + " VS " + this.desafiante.getNome());
         } else{
             this.aprovada = false;
             this.desafiado = null;
@@ -34,7 +34,7 @@ public class Luta {
             
             Random aleatorio = new Random();
             int vencedor = aleatorio.nextInt(3); //0 1 2
-            System.out.println(" ==== RESULTADO DA LUTA ===");
+            System.out.println("==== RESULTADO DA LUTA ===");
             switch(vencedor) {
                 case 0:  //Empate
                     System.out.println("Empatou!");

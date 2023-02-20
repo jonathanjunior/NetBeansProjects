@@ -4,8 +4,8 @@ public class Aula06_POO {
         ControleRemoto c = new ControleRemoto();    
         
         c.maisVolume();
-        c.play();
+        //c.play();
         c.abrirMenu();
-        c.fecharMenu();
+       // c.fecharMenu();
     }    
 }
