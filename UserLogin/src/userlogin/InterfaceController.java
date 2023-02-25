@@ -1,7 +1,6 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXML2.java to edit this template
  */
 package userlogin;
 
@@ -19,8 +18,12 @@ import javafx.scene.control.Label;
 public class InterfaceController implements Initializable {
     
     @FXML
-    private void exit(ActionEvent event){
-        System.exit(0);
+    private Label label;
+    
+    @FXML
+    private void handleButtonAction(ActionEvent event) {
+        System.out.println("You clicked me!");
+        label.setText("Hello World!");
     }
     
     @Override
