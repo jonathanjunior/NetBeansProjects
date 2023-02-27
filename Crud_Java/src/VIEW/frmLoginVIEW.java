@@ -145,9 +145,13 @@ public class frmLoginVIEW extends javax.swing.JFrame {
             ResultSet rsusuariodao = objusuariodao.atenticacaoUsuario(objusuariodto);
 
             if (rsusuariodao.next()) { //pelo menos 1
-                //chamar tela que quero abrir                
-                frmPrincipalVIEW objfrmprincipalview = new frmPrincipalVIEW();
-                objfrmprincipalview.setVisible(true);
+                //chamar tela que quero abrir    
+                
+                //frmPrincipalVIEW objfrmprincipalview = new frmPrincipalVIEW();
+                //objfrmprincipalview.setVisible(true);
+                
+                frmFuncionarioVIEW objfrmfuncionarioview = new frmFuncionarioVIEW();
+                objfrmfuncionarioview.setVisible(true);
 
                 dispose(); //fechar a tela de usuario e senha
 

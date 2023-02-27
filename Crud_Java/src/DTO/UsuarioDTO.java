@@ -1,5 +1,5 @@
 
-package DTO; //Encapsulamento, Getters e Setters
+package DTO; //Data Transfer Object, Encapsulamento, Getters e Setters
 
 public class UsuarioDTO {
     private int id_usuario;

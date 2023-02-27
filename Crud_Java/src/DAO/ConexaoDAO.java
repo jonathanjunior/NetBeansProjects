@@ -1,4 +1,4 @@
-package DAO; //Acesso a objetos e banco de dados
+package DAO; // Data Access Objects. Acesso a objetos e banco de dados
 
 
 import java.sql.Connection;
