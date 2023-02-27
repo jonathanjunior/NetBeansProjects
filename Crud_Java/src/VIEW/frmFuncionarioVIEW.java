@@ -14,7 +14,7 @@ public class frmFuncionarioVIEW extends javax.swing.JFrame {
      */
     public frmFuncionarioVIEW() {
         initComponents();
-        listarValoresFuncionario();
+        //listarValoresFuncionario();
     }
 
     /**
@@ -123,13 +123,13 @@ public class frmFuncionarioVIEW extends javax.swing.JFrame {
 
         FuncionarioDAO objfuncionariodao = new FuncionarioDAO();
         objfuncionariodao.cadastrarFuncionario(objfuncionariodto);
-        
-        listarValoresFuncionario();
+        JOptionPane.showMessageDialog(null, "Usuário " + objfuncionariodto.getNome_funcionario() + " cadastrado com sucesso.");
+        //listarValoresFuncionario();
 
     }//GEN-LAST:event_btnCadastrarActionPerformed
 
     private void btnPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPesquisarActionPerformed
-        listarValoresFuncionario();
+       listarValoresFuncionario();
     }//GEN-LAST:event_btnPesquisarActionPerformed
 
     /**
