@@ -56,4 +56,23 @@ public class FuncionarioDAO {
 
         return lista;
     }
+    
+    public void alterarFuncionario(FuncionarioDTO objfuncionariodto){
+        String sql = "UPDATE funcionario SET nome_funcionario = ?, endereco_funcionario = ? WHERE id_funcionario = ?";
+        
+        conn = new ConexaoDAO().conectaBD();
+
+        try {
+            pstm = conn.prepareStatement(sql);
+            pstm.setString(1, objfuncionariodto.getNome_funcionario());
+            pstm.setString(2, objfuncionariodto.getEndereco_funcionario());
+            pstm.setInt(3, objfuncionariodto.getId_funcionario());
+
+            pstm.execute();
+            pstm.close();
+
+        } catch (SQLException erro) {
+            JOptionPane.showMessageDialog(null, "FuncionarioDAO Alterar: " + erro);
+        }
+    }
 }
