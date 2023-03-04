@@ -16,13 +16,14 @@ public class FuncionarioDAO {
     ArrayList<FuncionarioDTO> lista = new ArrayList<>();
 
     public void cadastrarFuncionario(FuncionarioDTO objfuncionariodto) {
-        String sql = "insert into funcionario (nome_funcionario, endereco_funcionario) values (?, ?)";
+        String sql = "insert into funcionario (nome_funcionario, endereco_funcionario, cod_cargo) values (?, ?, ?)";
         conn = new ConexaoDAO().conectaBD();
 
         try {
             pstm = conn.prepareStatement(sql);
             pstm.setString(1, objfuncionariodto.getNome_funcionario());
             pstm.setString(2, objfuncionariodto.getEndereco_funcionario());
+            pstm.setInt(3, objfuncionariodto.getCod_cargo());
 
             pstm.execute();
             pstm.close();
@@ -74,5 +75,38 @@ public class FuncionarioDAO {
         } catch (SQLException erro) {
             JOptionPane.showMessageDialog(null, "FuncionarioDAO Alterar: " + erro);
         }
+    }
+    
+    public void excluirFuncionario(FuncionarioDTO objfuncionariodto){
+        String sql = "DELETE FROM funcionario WHERE id_funcionario = ?";
+        
+        conn = new ConexaoDAO().conectaBD();
+        
+        try {
+            pstm = conn.prepareStatement(sql);            
+            pstm.setInt(1, objfuncionariodto.getId_funcionario());
+
+            pstm.execute();
+            pstm.close();
+
+        } catch (SQLException erro) {
+            JOptionPane.showMessageDialog(null, "FuncionarioDAO Excluir: " + erro);
+        }
+        
+    }
+    
+    public ResultSet listarCargo(){
+        conn = new ConexaoDAO().conectaBD();
+        String sql = "SELECT * FROM cargo ORDER BY descricao_cargo;";        
+
+        try {
+            pstm = conn.prepareStatement(sql);
+            return pstm.executeQuery();
+
+        } catch (SQLException erro) {
+            JOptionPane.showMessageDialog(null, "FuncionarioDAO listarCargo: " + erro.getMessage());
+            return null;
+        }
+        
     }
 }

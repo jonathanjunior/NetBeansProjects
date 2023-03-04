@@ -2,8 +2,10 @@ package VIEW;
 
 import DAO.FuncionarioDAO;
 import DTO.FuncionarioDTO;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Vector;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -14,7 +16,8 @@ public class frmFuncionarioVIEW extends javax.swing.JFrame {
      */
     public frmFuncionarioVIEW() {
         initComponents();
-        //listarValoresFuncionario();
+        listarValoresFuncionario();
+        restartarDadosComboBoxCargo();
     }
 
     /**
@@ -33,12 +36,14 @@ public class frmFuncionarioVIEW extends javax.swing.JFrame {
         btnCadastrar = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         tabelaFuncionario = new javax.swing.JTable();
-        btnPesquisar = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         txtCodigo = new javax.swing.JTextField();
         btnCarregarCampos = new javax.swing.JButton();
         btnLimpar = new javax.swing.JButton();
         btnAlterar = new javax.swing.JButton();
+        btnExcluir = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+        cbxCargo = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -66,13 +71,6 @@ public class frmFuncionarioVIEW extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(tabelaFuncionario);
 
-        btnPesquisar.setText("PESQUISAR");
-        btnPesquisar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnPesquisarActionPerformed(evt);
-            }
-        });
-
         jLabel3.setText("COD");
 
         txtCodigo.setEnabled(false);
@@ -98,69 +96,92 @@ public class frmFuncionarioVIEW extends javax.swing.JFrame {
             }
         });
 
+        btnExcluir.setText("EXCLUIR");
+        btnExcluir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnExcluirActionPerformed(evt);
+            }
+        });
+
+        jLabel4.setText("Cargo");
+
+        cbxCargo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecione" }));
+        cbxCargo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cbxCargoActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(37, 37, 37)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel3)
-                                    .addComponent(txtCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(36, 36, 36)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(btnCadastrar)
-                                        .addGap(32, 32, 32)
-                                        .addComponent(btnPesquisar, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(jLabel2)
-                                    .addComponent(txtEndereco)
+                                    .addComponent(txtEndereco, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(txtNome, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(5, 5, 5)
-                                        .addComponent(jLabel1))
-                                    .addComponent(btnAlterar, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGap(0, 31, Short.MAX_VALUE))
+                                    .addComponent(jLabel1)
+                                    .addComponent(jLabel2))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(btnCadastrar)
+                                        .addComponent(btnExcluir, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(btnAlterar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnLimpar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addContainerGap())
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(btnLimpar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnCarregarCampos)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(cbxCargo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel3))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnCarregarCampos, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(14, 14, 14)
+                .addGap(35, 35, 35)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(txtNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(24, 24, 24)
-                .addComponent(jLabel2)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(txtCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(30, 30, 30)
+                        .addComponent(jLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtEndereco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnCadastrar)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnAlterar)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnExcluir)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnLimpar)
+                        .addGap(34, 34, 34)))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtEndereco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnCadastrar)
-                    .addComponent(btnPesquisar))
-                .addGap(18, 18, 18)
-                .addComponent(btnAlterar)
-                .addGap(50, 50, 50)
+                .addComponent(cbxCargo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnCarregarCampos)
-                    .addComponent(btnLimpar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(btnCarregarCampos)
                 .addContainerGap())
         );
 
@@ -170,12 +191,9 @@ public class frmFuncionarioVIEW extends javax.swing.JFrame {
     private void btnCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastrarActionPerformed
          cadastrarFuncionario();
          listarValoresFuncionario();
+         limparCampos();
         
     }//GEN-LAST:event_btnCadastrarActionPerformed
-
-    private void btnPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPesquisarActionPerformed
-       listarValoresFuncionario();
-    }//GEN-LAST:event_btnPesquisarActionPerformed
 
     private void btnCarregarCamposActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCarregarCamposActionPerformed
         carregarCampos();
@@ -190,6 +208,16 @@ public class frmFuncionarioVIEW extends javax.swing.JFrame {
         listarValoresFuncionario();
         limparCampos();
     }//GEN-LAST:event_btnAlterarActionPerformed
+
+    private void btnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExcluirActionPerformed
+        excluirFuncionario();
+        listarValoresFuncionario();
+        limparCampos();
+    }//GEN-LAST:event_btnExcluirActionPerformed
+
+    private void cbxCargoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbxCargoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cbxCargoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -230,11 +258,13 @@ public class frmFuncionarioVIEW extends javax.swing.JFrame {
     private javax.swing.JButton btnAlterar;
     private javax.swing.JButton btnCadastrar;
     private javax.swing.JButton btnCarregarCampos;
+    private javax.swing.JButton btnExcluir;
     private javax.swing.JButton btnLimpar;
-    private javax.swing.JButton btnPesquisar;
+    private javax.swing.JComboBox<String> cbxCargo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tabelaFuncionario;
     private javax.swing.JTextField txtCodigo;
@@ -275,17 +305,21 @@ public class frmFuncionarioVIEW extends javax.swing.JFrame {
     
     private void cadastrarFuncionario(){
         String nome, endereco;
+        int codcargo;
+        
         nome = txtNome.getText();
         endereco = txtEndereco.getText();
+        codcargo = id_cargo.get(cbxCargo.getSelectedIndex() - 1);
 
         FuncionarioDTO objfuncionariodto = new FuncionarioDTO();
         objfuncionariodto.setNome_funcionario(nome);
         objfuncionariodto.setEndereco_funcionario(endereco);
+        objfuncionariodto.setCod_cargo(codcargo);
 
         FuncionarioDAO objfuncionariodao = new FuncionarioDAO();
         objfuncionariodao.cadastrarFuncionario(objfuncionariodto);
         JOptionPane.showMessageDialog(null, "Usuário " + objfuncionariodto.getNome_funcionario() + " cadastrado com sucesso.");
-        //listarValoresFuncionario();
+        
     }
     
     private void limparCampos(){
@@ -296,20 +330,59 @@ public class frmFuncionarioVIEW extends javax.swing.JFrame {
     }
     
     private void alterarFuncionario(){
+        //Declaração das variaves
         int id_funcionario;
         String nome_funcionario, endereco_funcionario;
         
+        //Receber do campo
         id_funcionario = Integer.parseInt(txtCodigo.getText());
         nome_funcionario = txtNome.getText();
         endereco_funcionario = txtEndereco.getText();
         
+        //Passar pra DTO
         FuncionarioDTO objfuncionariodto = new FuncionarioDTO();
         objfuncionariodto.setId_funcionario(id_funcionario);
         objfuncionariodto.setNome_funcionario(nome_funcionario);
         objfuncionariodto.setEndereco_funcionario(endereco_funcionario);
         
+        //Execução da DAO
         FuncionarioDAO objfuncionariodao = new FuncionarioDAO();
         objfuncionariodao.alterarFuncionario(objfuncionariodto);
+    }
+    
+    private void excluirFuncionario(){
+         //Declaração das variaves
+        int id_funcionario;
+        
+        //Receber do campo
+        id_funcionario = Integer.parseInt(txtCodigo.getText());
+       
+        //Passar pra DTO
+        FuncionarioDTO objfuncionariodto = new FuncionarioDTO();
+        objfuncionariodto.setId_funcionario(id_funcionario);
+        
+        //Execução da DAO
+        FuncionarioDAO objfuncionariodao = new FuncionarioDAO();
+        objfuncionariodao.excluirFuncionario(objfuncionariodto);
+        
+    }
+    
+    Vector<Integer> id_cargo = new Vector<Integer>();
+    
+    public void restartarDadosComboBoxCargo(){
+        try {
+            
+            FuncionarioDAO objfuncionariodao = new FuncionarioDAO();
+            ResultSet rs = objfuncionariodao.listarCargo();
+            
+            while (rs.next()) {
+                id_cargo.addElement(rs.getInt(1));
+                cbxCargo.addItem(rs.getString(2));
+            }
+            
+        } catch (Exception erro) {
+            JOptionPane.showConfirmDialog(null, "Carregar Cargo VIEW: " + erro);
+        }
     }
     
 }
