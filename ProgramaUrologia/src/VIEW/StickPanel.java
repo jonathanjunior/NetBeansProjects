@@ -823,7 +823,7 @@ public class StickPanel extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtNamePac1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNamePac1ActionPerformed
-     
+        
     }//GEN-LAST:event_txtNamePac1ActionPerformed
 
     private void txtNameDr1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNameDr1ActionPerformed
@@ -908,12 +908,40 @@ public class StickPanel extends javax.swing.JFrame {
         objapartamento.setDescricao(desc);           
 
         ApartamentoConn objapartamentoconn = new ApartamentoConn();
-        objapartamentoconn.cadastrarApartamento(objapartamento);      
+        objapartamentoconn.cadastrarApartamento(objapartamento, 1);
+        
+        /////////////////////////////////////////////////
+         
+       
+        pac = txtNamePac2.getText();
+        dr = txtNameDr2.getText();
+        desc= txtDesc2.getText();          
+        
+        objapartamento.setNome_pac(pac);
+        objapartamento.setNome_med(dr);
+        objapartamento.setDescricao(desc);
+        
+        objapartamentoconn.cadastrarApartamento(objapartamento, 3);
 
         
     }//GEN-LAST:event_btnSalvarActionPerformed
 
     private void btnAtualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtualizarActionPerformed
+        ApartamentoConn objapartamentoconn = new ApartamentoConn();
+        Apartamento objapartamento = new Apartamento();
+         
+        objapartamentoconn.atualizarApartamento(objapartamento);      
+        
+        txtNamePac1.setText(objapartamento.getNome_pac());
+        txtNameDr1.setText(objapartamento.getNome_med());
+        txtDesc1.setText(objapartamento.getDescricao());
+        
+        txtNamePac2.setText(objapartamento.getNome_pac());
+        txtNameDr2.setText(objapartamento.getNome_med());
+        txtDesc2.setText(objapartamento.getDescricao());
+        
+        //////////////////////////////////////////////////////////
+        
         
         
     }//GEN-LAST:event_btnAtualizarActionPerformed
